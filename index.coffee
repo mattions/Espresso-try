@@ -5,7 +5,7 @@ html ->
     title 'Espresso try'
     script src: "lib/jquery-1.7.2.js"
     #script src: 'lib/bootstrap-2.0.2/js/bootstrap.js'
-    script src: 'src/models.js'
+    script src: 'src/search-client.js'
     #link rel: 'stylesheet', href: 'lib/bootstrap-2.0.2/css/slate-bootstrap.min.css'
     link rel: 'stylesheet', href: 'lib/bootstrap-2.0.2/css/cerulan-bootstrap.min.css'
     #link rel: 'stylesheet', href: 'lib/bootstrap-2.0.2/css/bootstrap.min.css'
@@ -20,6 +20,8 @@ html ->
                 
                 input id: 'searchQuery', type: 'text', class: 'input-medium search-query', 
                 placeholder: 'e.g.: foobar',
+                
+                input id: 'StackOverflow1370021', value:'Fix the lonely form', style: 'display:none',
                 
                 input id: 'searchButton', type: 'button', class: 'btn', value: "Search", 
                 onclick: "doSearch()"
